@@ -1,0 +1,57 @@
+[
+    {
+        "folder": "mnist",
+        "dataset": "mnist",
+        "filetype": ".npz",
+        "x": "x",
+        "y": "y",
+        "attrib": "labels",
+        "plotType": "scatter",
+        "xlabel": "Population of City where Fraud Occurred (in millions)",
+        "ylabel": "Amount of Credit Card Fraud (in USD)"
+    },
+    {
+        "folder": "pollution",
+        "dataset": "pollution",
+        "filetype": ".csv",
+        "x": "State",
+        "y": "CO AQI",
+        "attrib": "Site Num",
+        "plotType": "bar",
+        "xlabel": "Location",
+        "ylabel": "Average Carbon Monoxide Air Quality Index"
+    },
+    {
+        "folder": "apps",
+        "dataset": "apps_and_games",
+        "filetype": ".csv",
+        "x": "minInstalls",
+        "y": "score",
+        "attrib": "genre",
+        "plotType": "bar",
+        "xlabel": "Number of Installs",
+        "ylabel": "Average Score (out of five stars)"
+    },
+    {
+        "folder": "fraud",
+        "dataset": "credit_card_fraud",
+        "filetype": ".csv",
+        "x": "city_pop",
+        "y": "amt",
+        "attrib": "category",
+        "plotType": "scatter",
+        "xlabel": "Population of City where Fraud Occurred (in millions)",
+        "ylabel": "Amount of Credit Card Fraud (in USD)"
+    },
+    {
+        "folder": "hidden",
+        "dataset": "hidden_corr",
+        "filetype": ".csv",
+        "x": "x",
+        "y": "y",
+        "attrib": "genre",
+        "plotType": "scatter",
+        "xlabel": "Population of City where Fraud Occurred (in millions)",
+        "ylabel": "Amount of Credit Card Fraud (in USD)"
+    }
+]

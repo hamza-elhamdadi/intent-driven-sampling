@@ -1,0 +1,6 @@
+data/apps/apps_and_games.csv
+data/fraud/credit_card_fraud.csv
+data/hidden/hidden_corr.csv
+data/pollution/pollution.csv
+testing.ipynb
+.DS_Store
