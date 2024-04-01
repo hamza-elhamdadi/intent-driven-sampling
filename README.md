@@ -21,6 +21,8 @@ The Hidden Correlation Dataset was synthesized by us, and is too large to serve 
 
 ## Study Stimuli
 
+The stimuli for pilot study can be found in the [./pilot/](pilot/) folder. Folder names are in the format b_{sampling frequency}_{set number}. Sampling frequency is the percentage of data points in the sample: {25, 50}. Set number is the Latin Square row/ question set: [1, 10].
+
 The stimuli for Experiment 1 can be found in the [./exp1/](exp1/) folder.
 The stimuli used for the instructions section of Experiment 1 can be found in the [./demo](demo/) and [./demo2](demo2/) folders.
 The stimulus for the second attention check is located in the [./attention_check.png](attention_check.png) file.

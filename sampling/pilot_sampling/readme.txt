@@ -1,0 +1,7 @@
+1. All my implementations are greedy. The basic idea of greedy is that we start from a random data point and keep picking next data points that maximize the diversity objective. In distance based diversity, the implementations need to be supplied with a NxN pairwise distance matrix, i.e., matrix[i][j] = distance between data point i and j. This is precomputed and the matrix is saved. This is the part that's the slowest.
+
+2. div_sampling.txt has maxmin, maxsum, set selection with coverage based diversity, DisC. 
+
+3. Fair-DPP has code collected from original authors. 
+
+4. fair_maxsum_maxmin.txt is the fair version of maxmin and maxsum. Again, it's a greedy implementation. In the pilot/original experiments, fairness was only gender based. The unfair greedy implementation picks the next data point to be whatever maximizes the objective. In this case, we first compute how many males/females should be in the sample (e.g., if equal representation is required in a sample size of 100, then we're only allowed to pick 50 males at most). In the sampling method, we kept track of how many male/female we had already picked to be in the sample. If we already picked the maximum amount of males allowed and the best choice to maximize the objective is a male, then we skip until we find the next-best female. 
