@@ -14,6 +14,7 @@ The datasets can be found at the following links:
 [https://www.kaggle.com/datasets/tapive/google-play-apps-and-games](Apps and Games Dataset)
 [./data/mnist/mnist.npz](MNIST dataset)
 [./data/control.csv](Fashion Dataset (used in pilot))
+
 The Hidden Correlation Dataset was synthesized by us, and is too large to serve online. 
 
 ### Samples of the data can be found in the corresponding subfolders in the [./data/](data/) folder
