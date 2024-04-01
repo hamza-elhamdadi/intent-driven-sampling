@@ -1,0 +1,48 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://hamza-elhamdadi.github.io/Affective_TDA/static/canvas-toBlob.js"></script>
+	<script type="text/javascript" src="https://hamza-elhamdadi.github.io/Affective_TDA/static/FileSaver.min.js"></script>
+	<script type="text/javascript" src="https://hamza-elhamdadi.github.io/Affective_TDA/static/saveSVG.js"></script>
+
+    <script src="static/js/main.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 100px">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <svg id="condition_A" width=400 height=200></svg>
+            </div>
+            <div class="col-6 mx-auto">
+                <svg id="condition_B" width=400 height=200></svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <select name="task" id="task" onchange="refresh()">
+                    <option value="distribution">characterize distribution</option>
+                    <option value="correlation">find correlation</option>
+                    <option value="extremum">find extremum</option>
+                    <option value="clusters">find clusters</option>
+                    <option value="derived">compute derived value</option>
+                    <option value="range_1">lower bound of range</option>
+                    <option value="range_2">upper bound of range</option>
+                    <option value="retrieve">retrieve value</option>
+                    <option value="filter">filter</option>
+                    <option value="order">order</option>
+                    <option value="anomalies">find anomalies</option>
+                  </select>
+            </div>
+            <div class="col-6">
+                <button type="button" id='save' class="btn btn-outline-secondary" onclick="save_image_A()">Save Condition A</button>
+                <button type="button" id='save' class="btn btn-outline-secondary" onclick="save_image_B()">Save Condition B</button>
+            </div>
+        </div>
+    </div>
+</body>
